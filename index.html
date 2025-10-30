@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>portfolio</title>
+        <style>
+            :root{
+                --background-color-: bisque;
+                --primary-color-:blue;
+                --secondary-color:dimgray;
+            }
+            body{
+                background-color: var(--background-color-);
+                margin: 0;
+                font-family: sans-serif;
+            }
+            .header{
+                position: sticky;
+                top: 0;
+                background-color:whitesmoke ;
+                padding: 1rem 2rem;
+                box-shadow: 0px 2px 5px gray;
+                display: flex;
+                justify-content: space-between;
+            }
+            .logo{
+                color: var(--secondary-color);
+                font-size: 24px;
+            }
+            .nav a{
+                text-decoration: none;
+                padding-left: 10px;
+                transform: color 0.3s;
+            }
+            a:hover{
+                color: var(--background-color-);
+            }
+            .hero{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                height: 100vh;
+            }
+            .vt{
+                text-decoration: none;
+                background-color: blue;
+                color: white;
+                padding: 5px;
+                border-radius: 6px;
+                padding-inline: 10px;
+                scroll-padding-block: 10px;
+                animation: pulse 2s infinite;
+                display: inline-block;
+                margin-top: 20px;
+            }
+            @keyframes pulse{
+                0%{
+                    box-shadow: 0 0 0 blue;
+                }
+                70%{
+                    box-shadow: 0 0 0 20px transparent;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo">Kancharla Hemanth</div>
+            <div class="nav">
+                <a href="#">Home</a>
+                <a href="#">Projects</a>
+                <a href="#">About</a>
+            </div>
+        </div>
+        <main>
+            <section class="hero">
+                <div>
+                    <h1>Creative Web development</h1>
+                    <p>Building beautiful websites and functions with CSS and HTML</p>
+                    <a href="T4_Flipping card.html" class="vt">view my work</a>
+                </div>
+            </section>
+            <section class="cls-work">
+                <h2>My Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <img src="https://placehold.co/600*400/3289b/ffffff?text=Project+One">
+                    </div>
+                </div>
+
+            </section>
+        </main>
+        
+        <footer >
+        <p>&copy;2025 K.Hemanth | All rights reserved.</p>
+        </footer>
+    </body>
+</html>
